@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Instructions — Pat Leomi | Communication Coach - For Careers, AI & Beyond</title>
+<meta name="description" content="Pat Leomi annotates the Claude project instructions he built for cooking to show how he designs clear instructions for AI.">
+<meta name="robots" content="noai, noimageai">
+<link rel="canonical" href="https://leomi.boston/project_recipe.html">
+<link rel="icon" href="assets/images/site-icon-green.png">
+<link rel="apple-touch-icon" href="assets/images/site-icon-green.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#44613B">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Project Instructions — Pat Leomi | Communication Coach - For Careers, AI & Beyond">
+<meta property="og:description" content="Pat Leomi annotates the Claude project instructions he built for cooking to show how he designs clear instructions for AI.">
+<meta property="og:url" content="https://leomi.boston/project_recipe.html">
+<meta property="og:image" content="https://leomi.boston/assets/images/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Pat Leomi">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="assets/fonts/Outfit/Outfit-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="assets/css/main.css">
+<script src="assets/js/components.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Project Instructions",
+  "url": "https://leomi.boston/project_recipe.html",
+  "about": ["Claude Projects", "Prompt engineering", "Generative AI", "AI project instructions"],
+  "author": {
+    "@type": "Person",
+    "name": "Pat Leomi",
+    "url": "https://leomi.boston/"
+  }
+}
+</script>
+</head>
+<body data-page="project_recipe">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============================================================ -->
+<!-- Navigation -->
+<!-- ============================================================ -->
+<div id="site-nav"></div>
+<div id="site-breadcrumbs"></div>
+
+<main id="main">
+
+<!-- ============================================================ -->
+<!-- HERO -->
+<!-- ============================================================ -->
+<section class="hero">
+<div class="container narrow">
+<span class="eyebrow">Approach · Projects</span>
+<h1>Project <span class="accent-italic">Instructions</span></h1>
+<p class="lede" style="margin-top: 1.5rem;">My first prompt was a recipe request, and I built my first Claude project to streamline recipe building. I think of it as a magic cookbook. It interviews me about what I want to make based on whats's actually in my kitchen, and then offers some options. Here's some of the thinking behind it.</p>
+
+ <!-- anchor chips -->
+<nav class="anchor-chips" aria-label="On this page">
+<a href="#why">Why I Created It</a>
+<a href="#what">What It Does</a>
+<a href="#how">How It Changed My Kitchen (and Everything Else)</a>
+<a href="#built">How I Built It</a>
+<a href="#downloads">Download The Files</a>
+</nav>
+</div>
+</section>
+
+<!-- ============================ WHY I CREATED IT ============================ -->
+<section class="section section--band" id="why">
+<div class="container narrow">
+<h2 class="section-head">Why I created it</h2>
+<div class="prose">
+<p>I love seeing the world through my stomach, exploring brand new recipes and what I can do with my cooking skills. It's a hobby that can quickly get expensive if I don't know how to reuse ingredients or competing responsibilities prevents me from cooking before expiration dates come. I always dreamed of having a magic cookbook that could work with my ideas based on what I had in my pantry.</p>
+<p>A few websites attempt to do this, but quality of the results vary. You select the ingredients you want and they surface recipes that match. There isn't a way to search for substitutions, control the difficulty, or choose how long the recipe takes. I all but gave up on the magic cookbook until chatbots came around.</p>
+<p>The first time I messaged ChatGPT was to see its abilities as a magic cookbook. It eventually got there, but the back and forth was significant. I didn't take the time to think through how to standardize recipe building until after I migrated to Claude and saw a LinkedIn post by a colleague I respect talking about the value of custom projects.</p>
+<p>Projects are a way to create a space where you can tell Claude how to do a routine task the same way in every new conversation in that space. I had previously ignored it in my professional work because I didn't do anything repetitive. I saw my magic cookbook as a way to explore those skills in a low risk way.</p>
+</div>
+</div>
+</section>
+
+<!-- ============================ WHAT IT DOES ============================ -->
+<section class="section" id="what">
+<div class="container narrow">
+<h2 class="section-head">What it does</h2>
+<div class="prose">
+<p>The magic cookbook is a Claude project. A project is a space where you can set instructions for how Claude handles conversations that open inside it. You can also upload files that are accesssible to any conversation inside the project.</p>
+<p>For this project, I wrote instructions for how I want recipes built and uploaded my ingredients and equipment as project knowledge. Then, I start a conversation with one of the following three triggers, and then Claude follows the corresponding instructions for what to do next:</p>
+</div>
+<div class="card-grid card-grid--3" style="margin-top: 1.5rem;">
+<div class="card">
+<span class="chip">"Becca"</span>
+<p class="text-muted card-desc">Builds simple recipes for my spouse, a person who wants to spend as little time in the kitchen as possible.</p>
+</div>
+<div class="card">
+<span class="chip">[A description]</span>
+<p class="text-muted card-desc">Interviews me to fill any gaps I didn't mention in my description before building options.</p>
+</div>
+<div class="card">
+<span class="chip">"Go."</span>
+<p class="text-muted card-desc">Interviews me one question at a time about my vision, then builds options around my answers.</p>
+</div>
+</div>
+
+<!-- Triggers in practice — one carousel, three real conversations -->
+<div class="prose" style="margin-top: 2.75rem;">
+<p>Here's what each trigger looks like in a real conversation. "Becca" stays deliberately simple. A description and "Go." both arrive at a rich, detailed recipe from different starting points. Tap any screenshot to view it full size:</p>
+<div class="pillars" data-pillars data-item-noun="Example" data-carousel-label="Trigger examples in practice">
+<div class="pillars__viewport">
+
+<article class="pillars__panel" id="trigger-becca" data-title="Becca">
+<h3 class="pillar-step">"Becca": for someone who doesn't like to cook</h3>
+<p>One word returns five straightforward options for my spouse to pick from. No interview, no analysis. Quick, low-effort dinners.</p>
+<a class="pillar-thumb" href="assets/images/Trigger_Becca.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/images/Trigger_Becca.png" alt="The full Claude conversation from the “Becca” trigger: one word returns five simple, set-it-and-forget-it dinner options for my spouse to choose from." loading="lazy"/>
+<span class="pillar-thumb__hint">View the full conversation ↗</span>
+</a>
+</article>
+
+<article class="pillars__panel" id="trigger-description" data-title="A Description">
+<h3 class="pillar-step">A description: for when I already have an idea</h3>
+<p>I describe roughly what I want to cook. Claude interviews me only on what I left out, then builds detailed options around my answers.</p>
+<a class="pillar-thumb" href="assets/images/Trigger_Description.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/images/Trigger_Description.png" alt="The Claude conversation from a description trigger: I describe what I want, Claude asks a few clarifying questions, then presents detailed recipe options." loading="lazy"/>
+<span class="pillar-thumb__hint">View the full conversation ↗</span>
+</a>
+</article>
+
+<article class="pillars__panel" id="trigger-go" data-title="Go.">
+<h3 class="pillar-step">"Go.": for when I don't know where to start</h3>
+<p>One word starts a qustion-by-question interview, then options, then the finished recipe.</p>
+<div class="pillar-thumb-row">
+<a class="pillar-thumb" href="assets/images/Trigger_Go_1.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/images/Trigger_Go_1.png" alt="Step one of the “Go.” trigger: Claude interviews me one question at a time about what I want to cook." loading="lazy"/>
+<span class="pillar-thumb__hint">1 · Interview ↗</span>
+</a>
+<a class="pillar-thumb" href="assets/images/Trigger_Go_2.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/images/Trigger_Go_2.png" alt="Step two of the “Go.” trigger: Claude presents several detailed recipe options based on my interview answers." loading="lazy"/>
+<span class="pillar-thumb__hint">2 · Options ↗</span>
+</a>
+<a class="pillar-thumb" href="assets/images/Trigger_Go_3.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/images/Trigger_Go_3.png" alt="Step three of the “Go.” trigger: the finished recipe Claude builds from the option I chose." loading="lazy"/>
+<span class="pillar-thumb__hint">3 · Recipe ↗</span>
+</a>
+</div>
+</article>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============================ HOW IT CHANGED MY KITCHEN (AND EVERYTHING ELSE) ============================ -->
+<section class="section section--band" id="how">
+<div class="container narrow">
+<h2 class="section-head">How it changed my kitchen (and everything else)</h2>
+<div class="snapshot snapshot--narrow" style="margin: 0 auto 2rem;">
+<div>
+<span class="label">Food Waste</span>
+<span class="big">0%</span>
+<span class="sub-list">vs weekly tosses</span>
+</div>
+<div>
+<span class="label">Grocery Spend</span>
+<span class="big">2/3 lower</span>
+<span class="sub-list">vs old monthly average</span>
+</div>
+<div>
+<span class="label">Shopping Trip</span>
+<span class="big">30 min</span>
+<span class="sub-list">vs hourlong trips</span>
+</div>
+</div>
+<div class="prose prose--center">
+<p>The magic cookbook helps me find recipes for anything I can imagine, but it's impact goes much further. What started as a fun and low risk way to test an AI feature shined a very bright light on how inefficiently we were running our household. That's because projects don't exist in isolation. There's a physical world that depends on it:</p>
+<ul class="tick-list">
+<li>A magic cookbook requires having a complete and up to date pantry inventory</li>
+<li>An accurate inventory demands having a reliable way to track it</li>
+<li>A tracking strategy only works well if the pantry has an organizational system</li>
+</ul>
+<p>Maintaining this system over time means building an inventorying habit, and from that habit spawned a host of other benefits:</p>
+<ul class="tick-list">
+<li>Expiration dates get caught and prioritized to minimize food waste</li>
+<li>Time spent inventorying speeds up because shopping lists get streamlined</li>
+<li>Grocery runs become more predictable and easier to navigate</li>
+</ul>
+<p>Creating this project led to coordination of the week itself, and now Sunday family meetings have become a regular place to talk through whatever our family is facing.</p>
+</div>
+</div>
+</section>
+
+<!-- ============================ HOW I BUILT IT ============================ -->
+<section class="section" id="built">
+<div class="container narrow">
+<h2 class="section-head">How I built it</h2>
+<div class="prose">
+<p>These are nine excerpts from the actual instructions, shown exactly how Claude reads them. I used what I know from programming, writing formulas, and doing research to write logic that contains plain definitions. Every rule earned their place by fixing a problem I ran into over time.</p>
+
+<ul class="tick-list">
+<li><b>Skim the three ideas below</b> to get a sense for the approach</li>
+<li><b>Tap <b style="color: var(--green); font-family: var(--font-head); font-size: 0.85em;">+ Why</b></b> on any excerpt for the decision behind it</li>
+<li><b>Skip to the downloads</b> to see the <b><a href="#downloads">annotated and raw versions</a></b> of the full instructions</li>
+</ul>
+</div>
+
+<button id="reveal-all" class="reveal-btn" type="button" style="margin-top: 2rem; margin-bottom: 0.25rem;">Reveal all the thinking</button>
+
+<!-- ——— Theme 1 ——— -->
+<div class="ex-theme">
+<span class="ex-theme-no">01</span>
+<h3>Set the stage before asking for anything</h3>
+</div>
+
+<div class="excerpt excerpt--sub">
+<div class="ex-doc">
+<span class="ex-ref">Opening line</span>
+<p><mark>This project is designed to help with selecting and designing recipes.</mark></p>
+</div>
+<button class="annot-toggle" aria-expanded="false" type="button"><span class="why">Why</span><span class="topic">Purpose statement</span></button>
+<div class="annot-panel">
+<p>Orients Claude to the project's scope before any instructions, so every step is read in context. It goes first because Claude reads top-down. It's the same reason an effective email puts the ask in the first line.</p>
+</div>
+</div>
+
+<div class="excerpt excerpt--sub">
+<div class="ex-doc">
+<span class="ex-ref">Section 1 · Process</span>
+<p>I will start a conversation with one of three triggers: (1) the word <b>“Becca”</b> <mark>(see 1.1)</mark>, (2) the word <b>“Go.”</b> <mark>(see 1.2)</mark>, or (3) a description of what I want to cook <mark>(see 1.3)</mark>.</p>
+</div>
+<button class="annot-toggle" aria-expanded="false" type="button"><span class="why">Why</span><span class="topic">Trigger words &amp; absolute references</span></button>
+<div class="annot-panel">
+<p><b>Trigger words:</b> a few key phrases each kick off a distinct experience, so one project serves three very different moods.</p>
+<p><b>Absolute references:</b> "see 1.1" points to the numbered structure unambiguously, so Claude always knows where it is.</p>
+</div>
+</div>
+
+<div class="excerpt excerpt--lead">
+<div class="ex-doc">
+<span class="ex-ref">Section 1.1 · “Becca” Starters</span>
+<p>When I start with “Becca,” I’m not the chef. Today’s chef has less skill, comfort, and interest in cooking and wants “set it and forget it”… offer five simple options and ask me to pick. <mark>Do not apply any subsequent rules outside of 4.2.c and 4.2.d when “Becca” is triggered.</mark></p>
+</div>
+<button class="annot-toggle" aria-expanded="false" type="button"><span class="why">Why</span><span class="topic">Trigger boundary</span></button>
+<div class="annot-panel">
+<p>An explicit "do not" endpoint stops Claude from running the advanced rules on a simple request. Without the boundary, my spouse's quick dinner question sometimes got the full interview treatment designed for me.</p>
+</div>
+</div>
+
+<!-- ——— Theme 2 ——— -->
+<div class="ex-theme">
+<span class="ex-theme-no">02</span>
+<h3>Control the conversation, not just the answer</h3>
+</div>
+
+<div class="excerpt excerpt--sub">
+<div class="ex-doc">
+<span class="ex-ref">Section 2 · Interview</span>
+<p>Ask the questions in <em>2. Interview</em> <mark>one at a time, using earlier answers to shape later questions</mark>. After questioning, silently confirm everything is addressed, then summarize my expectations and wait for me to confirm before continuing.</p>
+</div>
+<button class="annot-toggle" aria-expanded="false" type="button"><span class="why">Why</span><span class="topic">One question at a time</span></button>
+<div class="annot-panel">
+<p>Without this, Claude dumps every question in one overwhelming block. One at a time lets it build on each answer, so question four is already shaped by answers one through three. It feels like planning dinner with someone, not filling out a form.</p>
+</div>
+</div>
+
+<div class="excerpt excerpt--sub">
+<div class="ex-doc">
+<span class="ex-ref">Section 3 · Silent Analysis</span>
+<p>If I triggered “Go.” or a description, <mark>silently analyze my responses, and do not print the analysis</mark>.</p>
+</div>
+<button class="annot-toggle" aria-expanded="false" type="button"><span class="why">Why</span><span class="topic">Silent analysis</span></button>
+<div class="annot-panel">
+<p>Without the word “silent,” Claude prints its reasoning as it goes, which is more than I need when I just want dinner. The thinking still happens; I just don’t have to scroll past it.</p>
+</div>
+</div>
+
+<div class="excerpt excerpt--lead">
+<div class="ex-doc">
+<span class="ex-ref">Section 3.3 · Profile Comparison</span>
+<p>Compare the 3.1 profile to the 3.2 inventory and rule out impossible combinations. <mark>If a profile centers on lamb and I have none, drop it.</mark> If I named an ingredient in the interview, I already have it, so prioritize that… <mark>Use reasonable judgment for conflicts I couldn’t anticipate.</mark></p>
+</div>
+<button class="annot-toggle" aria-expanded="false" type="button"><span class="why">Why</span><span class="topic">If/then checks &amp; a reality check</span></button>
+<div class="annot-panel">
+<p><b>If/then checks:</b> built on the numbered references, these let Claude test whether it should be doing something or not.</p>
+<p><b>The reality check:</b> Claude dreams up ideal dishes first; this step forces that dream to align with what’s actually in my kitchen. The “reasonable judgment” line covers the conflicts I couldn’t predict.</p>
+</div>
+</div>
+
+<!-- ——— Theme 3 ——— -->
+<div class="ex-theme">
+<span class="ex-theme-no">03</span>
+<h3>Shape the output like you know the reader</h3>
+</div>
+
+<div class="excerpt excerpt--lead">
+<div class="ex-doc">
+<span class="ex-ref">Section 4.2.b · Cultural Region Requests</span>
+<p>If I name a region, use its flavor profiles to emulate the style with what I have… <mark>Umami is umami: in a Thanksgiving dish I once used white miso instead of missing mushrooms and kept the same depth.</mark> Treat regional styles as flavor inspiration for pattern matching, not strict rules.</p>
+</div>
+<button class="annot-toggle" aria-expanded="false" type="button"><span class="why">Why</span><span class="topic">A concrete example beats a vague rule</span></button>
+<div class="annot-panel">
+<p>This whole section grew out of Claude repeatedly suggesting traditional ingredients I didn’t own. The miso-for-mushroom example grounds an otherwise vague instruction like “emulate that style,” and naming it “pattern matching” gives literal interpretations permission to be creative.</p>
+</div>
+</div>
+
+<div class="excerpt excerpt--sub">
+<div class="ex-doc">
+<span class="ex-ref">Section 5.2 · Instruction Complexity</span>
+<p><mark>Assume home-chef literacy</mark>: standard technique names without explanation (“sauté the onion” needs no how-to), clear ingredient order, but added detail for advanced or specialized techniques like flambéing, sous vide, or culture-specific methods.</p>
+</div>
+<button class="annot-toggle" aria-expanded="false" type="button"><span class="why">Why</span><span class="topic">Name your audience</span></button>
+<div class="annot-panel">
+<p>I name the audience: me. I know how to cook and have taken classes, so over-detailed recipes don’t serve me. Without this, Claude either writes for a nervous beginner or takes shortcuts on the techniques that actually need explaining.</p>
+</div>
+</div>
+
+<div class="excerpt excerpt--sub">
+<div class="ex-doc">
+<span class="ex-ref">Section 5.4 · Recipe Ingredients</span>
+<p>Follow 4.2 distinctiveness. <mark>Don’t use any ingredient not captured in my interview or listed in <em>3.2.a</em> unless I explicitly ask for it.</mark></p>
+</div>
+<button class="annot-toggle" aria-expanded="false" type="button"><span class="why">Why</span><span class="topic">The deliberate repeat</span></button>
+<div class="annot-panel">
+<p>Earlier rules already say to use only what I have, but Claude still slips in new ideas sometimes (especially when I was testing on Opus 4.6 and 4.7) so I repeat the guardrail right where the final recipe gets written.</p>
+</div>
+</div>
+
+<div class="prose" style="margin-top: 3rem;">
+<p>There isn't a single place to start using AI, or one right way to do it. This strategy works extremely well for me. Pick something you're interested in, observe what happens, and improve it over time. Find the communication style that works best for you.</p>
+</div>
+</div>
+</section>
+
+<!-- ============================ DOWNLOADS ============================ -->
+<section class="section section--band" id="downloads">
+<div class="container narrow">
+<h2 class="section-head">Download the files</h2>
+<div class="prose">
+<p>The annotated instructions highlights decisions behind the structure of each rule, beyond what's included in this excerpt. The raw version is the clean instruction set I actually use with Claude.</p>
+</div>
+<div class="download-grid" style="margin-top: 1.5rem;">
+<a class="download-tile download-tile--primary" href="assets/docs/Project%20Instructions_Recipe_Annotated.pdf" target="_blank" rel="noopener">
+<b>Annotated Instructions</b>
+<span>PDF</span>
+</a>
+<a class="download-tile" href="assets/docs/Project%20Instructions_Recipe_Raw.docx">
+<b>Raw Instructions</b>
+<span>Word</span>
+</a>
+</div>
+<div class="prose" style="margin-top: 2rem;">
+<p>Chatbots are constantly evolving, so I treat these instructions and all of my prompts as living documents. While building this website, I tested the recipe project and found Sonnet 5 summarized what it was "silently confirming" before sharing recipe options. I added these instructions to 5. Recipe Output: "Do not output your silent analysis or reference it as "silently confirmed." That defeats the purpose of it being silent."</p>
+</div>
+</div>
+</section>
+
+<!-- ============================================================ -->
+<!-- CALL TO ACTION -->
+<!-- ============================================================ -->
+<section class="section">
+<div class="container narrow">
+<div class="cta-banner">
+<div>
+<h3>Want to create useful project instructions?</h3>
+</div>
+<div class="cta-actions">
+<a class="btn btn--light" href="connect.html">Schedule a free 15-minute consult</a>
+<a class="btn btn--ghost" href="test.html">Not sure yet? Test your knowledge</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============================================================ -->
+<!-- PAGE TURN -->
+<!-- ============================================================ -->
+<section class="section section--flush">
+<div class="container narrow">
+<nav class="page-turn" aria-label="Keep reading">
+<a class="page-turn-link" href="approach.html"><span class="page-turn-dir">← Previous</span><span class="page-turn-label">How I Teach AI (With Examples)</span></a>
+<a class="page-turn-link page-turn-link--next" href="prompt_resumes.html"><span class="page-turn-dir">Next →</span><span class="page-turn-label">Prompt Design</span></a>
+</nav>
+</div>
+</section>
+
+</main>
+
+<!-- ============================================================ -->
+<!-- Footer -->
+<!-- ============================================================ -->
+<div id="site-footer"></div>
+
+</body>
+</html>

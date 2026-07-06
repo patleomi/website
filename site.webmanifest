@@ -1,0 +1,17 @@
+{
+  "name": "Pat Leomi — Communication Coach",
+  "short_name": "Pat Leomi",
+  "description": "Pat Leomi is a communication coach helping people say what they mean and find work that fits who they are, with and without generative AI.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF9F4",
+  "theme_color": "#44613B",
+  "icons": [
+    {
+      "src": "assets/images/site-icon-green.png",
+      "sizes": "1770x1742",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

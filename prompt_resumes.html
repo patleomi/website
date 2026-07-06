@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prompt Design — Pat Leomi | Communication Coach - For Careers, AI & Beyond</title>
+<meta name="description" content="Pat Leomi annotates a resume-tailoring prompt he designed to show how he thinks about writing prompts for other people.">
+<meta name="robots" content="noai, noimageai">
+<link rel="canonical" href="https://leomi.boston/prompt_resumes.html">
+<link rel="icon" href="assets/images/site-icon-green.png">
+<link rel="apple-touch-icon" href="assets/images/site-icon-green.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#44613B">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Prompt Design — Pat Leomi | Communication Coach - For Careers, AI & Beyond">
+<meta property="og:description" content="Pat Leomi annotates a resume-tailoring prompt he designed to show how he thinks about writing prompts for other people.">
+<meta property="og:url" content="https://leomi.boston/prompt_resumes.html">
+<meta property="og:image" content="https://leomi.boston/assets/images/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Pat Leomi">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="assets/fonts/Outfit/Outfit-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="assets/css/main.css">
+<script src="assets/js/components.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Prompt Design",
+  "url": "https://leomi.boston/prompt_resumes.html",
+  "about": ["Prompt engineering", "Generative AI", "Resume writing", "Job search", "Career coaching"],
+  "author": {
+    "@type": "Person",
+    "name": "Pat Leomi",
+    "url": "https://leomi.boston/"
+  }
+}
+</script>
+</head>
+<body data-page="prompt_resumes">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============================================================ -->
+<!-- Navigation -->
+<!-- ============================================================ -->
+<div id="site-nav"></div>
+<div id="site-breadcrumbs"></div>
+
+<main id="main">
+
+<!-- ============================================================ -->
+<!-- HERO -->
+<!-- ============================================================ -->
+<section class="hero">
+<div class="container narrow">
+<span class="eyebrow">Approach · Prompts</span>
+<h1>Prompt <span class="accent-italic">Design</span></h1>
+<p class="lede" style="margin-top: 1.5rem;">I believe in using AI intentionally, which means thinking first and testing prompts before sharing them with others. This page gives you a look inside a prompt I built for resume tailoring. I wrote it so that even if someone hasn't used AI before, they can pick it up and go with limited instruction.</p>
+
+<!-- anchor chips -->
+<nav class="anchor-chips" aria-label="On this page">
+<a href="#why">Why I Created It</a>
+<a href="#how">How It Works</a>
+<a href="#see">How It Looks In Action</a>
+<a href="#inside">How I Built It</a>
+<a href="#downloads">Download The Files</a>
+</nav>
+</div>
+</section>
+
+<!-- ============================ WHY I CREATED IT ============================ -->
+<section class="section section--band" id="why">
+<div class="container narrow">
+<h2 class="section-head">Why I created it</h2>
+<div class="prose">
+<p>I initially hesitated to create reusable prompts. Most requests are unique, and early prompting styles didn't account for that. People would write prompts with bracketed placeholders like [job type], which creates an opportunity for user error if they accidentally delete the wrong part of the prompt. It also categorically limits the information added to a prompt and doesn't define words or phrases, which results in very generic output.</p>
+<p>I changed how I thought about prompting when I came across the idea of having the AI interview you to personalize the output. That thinking has become core to <b><a href="approach.html/#pillars-heading">how I approach</a></b> using AI. I realized that you can write into the prompt the parts that don't change and have it interview you about the parts that do. The example on this page represents the grandchild of that thinking.</p>
+<p>The prompt below is a reusable resume tailoring prompt that I initially began developing during the job search that landed me a position as an Assistant Director in Northeastern University's Career Development office. Since then, I've applied what I learned from the <b><a href="project_recipe.html">magic cookbook recipe project</a></b> and integrated some of what I learned about effective resume bullets from my time at Northeastern. Over time I realized that the AI will take shortcuts if you take too many steps at once, so I built prompt guides that break tasks like interviewing and resume writing into prompt sequences that work toward a shared goal.</p>
+<p>This prompt is the last prompt in the resume prompt guide, used for tailoring your resume. It comes after analyzing the job description and testing your current resume's fit. This represents just one approach to using AI and one way of thinking about resume writing, not the only ways or even the most powerful ones. Other approaches like Skills can be much more effective. But for someone who hasn't used a chatbot, a prompt they can paste and send with no setup reduces barriers to getting started.</p>
+<p>Most prompts don't need to be as complex as this one, especially if you're writing it for yourself. You already know what you expect to happen and can keep following up until you get it. This prompt has bene adapted for other people who might not share my understanding of what an effective resume looks like. This means it needs to anticipate what they won't think about and have contingencies built in to address those head on. Every line in this prompt earned its place.</p>
+</div>
+</div>
+</section>
+
+<!-- ============================ HOW IT WORKS ============================ -->
+<section class="section" id="how">
+<div class="container narrow">
+<h2 class="section-head">How it works</h2>
+<div class="prose">
+<p>Any prompt I might share follows three steps. The second step is where you spend your time thinking.</p>
+</div>
+<div class="steps" style="margin-top: 2.25rem;">
+<div class="step">
+<div class="step-no"></div>
+<h3>Send the prompt</h3>
+<p>Copy and paste the prompt into a new chat window</p>
+</div>
+<div class="step">
+<div class="step-no"></div>
+<h3>Answer questions</h3>
+<p>Respond to each question as they're asked</p>
+</div>
+<div class="step">
+<div class="step-no"></div>
+<h3>Scrutinize results</h3>
+<p>Check responses against your self-understanding</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============================ HOW IT LOOKS IN ACTION ============================ -->
+<section class="section section--band" id="see">
+<div class="container narrow">
+<h2 class="section-head">How it looks in action</h2>
+<div class="prose">
+<p>These screenshots follow the same three phases described above. Use the tabs to move between them, and tap any image to open it full size.</p>
+</div>
+
+<div class="pillars" data-pillars data-item-noun="Phase" data-carousel-label="The prompt in action" style="margin-top: 1.5rem;">
+<div class="pillars__viewport">
+
+<article class="pillars__panel" id="view-send" data-title="Send The Prompt">
+<h3 class="pillar-step">Send The Prompt</h3>
+<p>The prompt pasted into a new chat window, leading to a welcome message and document gathering questions.</p>
+<a class="pillar-thumb" href="assets/images/Prompt_Tailoring_1.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/images/Prompt_Tailoring_1.png" alt="Screenshot of the resume tailoring prompt pasted into a new chat window, with the AI asking for the job description, prior prompt outputs, and current resume before the interview starts." loading="lazy" style="object-fit: cover; object-position: center 32%;"/>
+<span class="pillar-thumb__hint">View full ↗</span>
+</a>
+</article>
+
+<article class="pillars__panel" id="view-answer" data-title="Answer Questions">
+<h3 class="pillar-step">Answer Questions</h3>
+<p>A question asked mid interview, personalized to this unique job seeker.</p>
+<a class="pillar-thumb" href="assets/images/Prompt_Tailoring_2.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/images/Prompt_Tailoring_2.png" alt="Screenshot of the AI asking about a specific resume bullet and how the user decided what to change, followed by a detailed answer describing the feedback signals behind that decision." loading="lazy"/>
+<span class="pillar-thumb__hint">View full ↗</span>
+</a>
+</article>
+
+<article class="pillars__panel" id="view-scrutinize" data-title="Scrutinize Results">
+<h3 class="pillar-step">Scrutinize Results</h3>
+<p>A word document produced by Claude, sharing revised bullets.</p>
+<a class="pillar-thumb" href="assets/images/Prompt_Tailoring_3.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/images/Prompt_Tailoring_3.png" alt="Screenshot of tailored resume bullets under the heading Tailored Resume Bullets, with a note to treat them as a rough draft and edit for accuracy before use." loading="lazy" style="object-fit: cover; object-position: center 60%;"/>
+<span class="pillar-thumb__hint">View full ↗</span>
+</a>
+</article>
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============================ HOW I BUILT IT ============================ -->
+<section class="section" id="inside">
+<div class="container narrow">
+<h2 class="section-head">How I built it</h2>
+<div class="prose">
+<p>These nine excerpts come from the resume tailoring prompt. I intentionally optimize for the human reader, not the AI. This means that these prompts could be enhanced to conserve conversation limits. I choose this appraoch so that job seekers can read the plain, first-person language, learn from it, and trust what it's about to do.</p>
+
+<ul class="tick-list">
+<li><b>Skim the three ideas below</b> to get a sense for the approach</li>
+<li><b>Tap <b style="color: var(--green); font-family: var(--font-head); font-size: 0.85em;">+ Why</b></b> on any excerpt for the decision behind it</li>
+<li><b>Skip to the downloads</b> to see the <b><a href="#downloads">annotated and raw versions</a></b> of the full instructions</li>
+</ul>
+</div>
+
+
+<button id="reveal-all" class="reveal-btn" type="button" style="margin-top: 2rem; margin-bottom: 0.25rem;">Reveal all the thinking</button>
+
+<!-- ——— Theme 1 ——— -->
+<div class="ex-theme">
+<span class="ex-theme-no">01</span>
+<h3>Write for a reader who didn't write it</h3>
+</div>
+
+<div class="excerpt">
+<div class="ex-doc">
+<span class="ex-ref">Opening lines</span>
+<p>Help me tailor my resume for a specific job by interviewing me about my experiences… <mark>This prompt was written by someone other than me, so follow the instructions as described without additional commentary about where we are in the process</mark>, because I might not have read this prompt and might not know what to expect.</p>
+</div>
+<button class="annot-toggle" aria-expanded="false" type="button"><span class="why">Why</span><span class="topic">Designed for handoff</span></button>
+<div class="annot-panel">
+<p>Most prompts are written by the person using them. This one is handed to strangers. Telling the AI that you probably haven't read the instructions stops it from narrating its progress with distracting updates on steps you didn't write.</p>
+</div>
+</div>
+
+<div class="excerpt">
+<div class="ex-doc">
+<span class="ex-ref">Governing Rule</span>
+<p>Throughout this conversation, <mark>offer suggestions rather than directives</mark>. <mark>Use language that preserves uncertainty (e.g., “could” over “would”)</mark>… Use accessible language appropriate for early career applicants and international applicants in America who might be unfamiliar with career jargon. Be conversational, not clinical.</p>
+</div>
+<button class="annot-toggle" aria-expanded="false" type="button"><span class="why">Why</span><span class="topic">Suggest, don't command</span></button>
+<div class="annot-panel">
+<p>This sits outside the numbered logic on purpose, so it applies to every response rather than one step. In a career context, telling someone what they "must" do ignores the fact that there are rarely concrete rules. Preserving uncertainty is my attempt to reduce the authoritative voice of the AI.</p>
+</div>
+</div>
+
+<div class="excerpt">
+<div class="ex-doc">
+<span class="ex-ref">Career Bio Context</span>
+<p>When I upload a Career Bio, use it to… surface tensions between my professional identity and how the resume currently frames my experiences, not to confirm alignment… <mark>Do not summarize the Career Bio back to me or reference it in ways that feel like retrieval. Use it as context that shapes the conversation, not content to be reported.</mark></p>
+</div>
+<button class="annot-toggle" aria-expanded="false" type="button"><span class="why">Why</span><span class="topic">Context, not content</span></button>
+<div class="annot-panel">
+<p>This instruction prevents the AI from simply parroting uploaded documents back to you.</p>
+</div>
+</div>
+
+<!-- ——— Theme 2 ——— -->
+<div class="ex-theme">
+<span class="ex-theme-no">02</span>
+<h3>Interview like a coach, not a form</h3>
+</div>
+
+<div class="excerpt">
+<div class="ex-doc">
+<span class="ex-ref">Section 2.3 · Diminishing Returns Check</span>
+<p>If the diagnosis… suggests my resume is already well-aligned with this job… <mark>pause before continuing to the interview</mark>… Then ask whether I want to proceed with a full interview, focus only on the bullets that still have meaningful gaps, or stop here. <mark>The goal is to avoid revising bullets that are already doing their job.</mark></p>
+</div>
+<button class="annot-toggle" aria-expanded="false" type="button"><span class="why">Why</span><span class="topic">Permission to stop</span></button>
+<div class="annot-panel">
+<p>Not everyone needs AI for every resume. Unnecessary revisions can introduce AI-pattern language or weaken phrasing that's already working, so the prompt is designed to argue itself out of a job when the work isn't needed. Few prompts do this; most assume more output is always better.</p>
+</div>
+</div>
+
+<div class="excerpt">
+<div class="ex-doc">
+<span class="ex-ref">Section 3.1 · Approach</span>
+<p>After each response, reflect back understanding of what I shared and its connection to the role before the next question… <mark>Paraphrase rather than parrot.</mark> Pick up one meaningful thread from what I’ve shared and use it to shape the next question. <mark>Do not refer to the WHWI format, because I might not know what that is.</mark></p>
+</div>
+<button class="annot-toggle" aria-expanded="false" type="button"><span class="why">Why</span><span class="topic">Active listening, defined</span></button>
+<div class="annot-panel">
+<p>If you just say "use active listening," the AI defaults to generic repetition of what you said, so it performs active listening instead of actually doing it. Here, I'm describing what I want active listening to look like. The last line keeps the prompt's internal jargon from leaking into the conversation.</p>
+</div>
+</div>
+
+<div class="excerpt">
+<div class="ex-doc">
+<span class="ex-ref">Section 3.2 · Question Focus</span>
+<p>Instead of “What was the impact?”, ask <mark>“What changed because of what you did there, and how does that relate to [paraphrase the business problem this role solves]?”</mark></p>
+</div>
+<button class="annot-toggle" aria-expanded="false" type="button"><span class="why">Why</span><span class="topic">Indirect questions, richer answers</span></button>
+<div class="annot-panel">
+<p>Job seekers often can't answer direct questions like "What was the impact?", which is what the AI tends to gravitate toward when told to gather specific types of info. Directing it to fold in what it already know about you into the question helps you give richer, more honest responses. The brackets aren't for you to edit. They signal to the AI what to think about and replace.</p>
+</div>
+</div>
+
+<div class="excerpt">
+<div class="ex-doc">
+<span class="ex-ref">Section 3.4 · Pacing</span>
+<p>After a stretch of intensive questions and long conversational responses, or every 7 to 10 questions, whichever comes first, say something like: <mark>“This kind of reflection takes energy. Take a break whenever you need to. We can pick up where we left off.” Vary the phrasing.</mark></p>
+</div>
+<button class="annot-toggle" aria-expanded="false" type="button"><span class="why">Why</span><span class="topic">Reflection is exhausting</span></button>
+<div class="annot-panel">
+<p>Being interviewed about your own work is draining, especially if you're followig a series of prompts that ask you to think deeply. Built-in break points help remid you to check in. "Vary the phrasing" keeps the reminder from feeling stale.</p>
+</div>
+</div>
+
+<!-- ——— Theme 3 ——— -->
+<div class="ex-theme">
+<span class="ex-theme-no">03</span>
+<h3>Make the output sound like you, not like AI</h3>
+</div>
+
+<div class="excerpt">
+<div class="ex-doc">
+<span class="ex-ref">Section 4.1 · Output Format</span>
+<p>Each bullet should be less than approximately 2 lines of text… Treat the connectors (“by,” “to,” “resulting in”) as a guide to the general shape, not required language. <mark>Vary them across bullets to avoid the parallelism that signals AI generation.</mark></p>
+</div>
+<button class="annot-toggle" aria-expanded="false" type="button"><span class="why">Why</span><span class="topic">Anticipating AI tells</span></button>
+<div class="annot-panel">
+<p>The prompt teaches a bullet formula (what, how, why, impact), then immediately tells the AI not to be strict about those instructions. There are no concrete rules to resume writing, and forcing the fit can restate the obvious or impart easy to spot signs of AI use. A separate langauge section bans other AI signals: buzzword density, redundant intensifiers, etc.</p>
+</div>
+</div>
+
+<div class="excerpt">
+<div class="ex-doc">
+<span class="ex-ref">Section 4.3 · Output Content</span>
+<p>After the title of this section, include this statement: “…<mark>Treat these bullets as a rough draft. Edit them for accuracy before copying and pasting them into your resume. What Claude created might sound good at first glance but feel wrong when inspected thoughtfully.</mark>”</p>
+</div>
+<button class="annot-toggle" aria-expanded="false" type="button"><span class="why">Why</span><span class="topic">The coaching ethic, embedded</span></button>
+<div class="annot-panel">
+<p>I build reminders into the prompt output so that you don't get caught up in treating AI like a shortcut. When I use AI in my own job search, I retype every bullet by hand so I retain command of over word.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- ============================ DOWNLOADS ============================ -->
+<section class="section section--band" id="downloads">
+<div class="container narrow">
+<h2 class="section-head">Download the files</h2>
+<div class="prose">
+<p>The annotated version pairs every section with the decision behind it, including everything this page didn’t excerpt. The raw version is the clean prompt, ready to paste into a conversation.</p>
+</div>
+<div class="download-grid" style="margin-top: 1.5rem;">
+<a class="download-tile download-tile--primary" href="assets/docs/Prompt_Resume%20Tailoring_Annotated.pdf" target="_blank" rel="noopener">
+<b>Annotated Prompt</b>
+<span>PDF</span>
+</a>
+<a class="download-tile" href="assets/docs/Prompt_Resume%20Tailoring_Raw.docx">
+<b>Raw Prompt</b>
+<span>Word</span>
+</a>
+</div>
+</div>
+</section>
+
+<!-- ============================================================ -->
+<!-- CALL TO ACTION -->
+<!-- ============================================================ -->
+<section class="section">
+<div class="container narrow">
+<div class="cta-banner">
+<div>
+<h3>Want to build effective prompts?</h3>
+</div>
+<div class="cta-actions">
+<a class="btn btn--light" href="connect.html">Schedule a free 15-minute consult</a>
+<a class="btn btn--ghost" href="test.html">Not sure yet? Test your knowledge</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============================================================ -->
+<!-- PAGE TURN -->
+<!-- ============================================================ -->
+<section class="section section--flush">
+<div class="container narrow">
+<nav class="page-turn" aria-label="Keep reading">
+<a class="page-turn-link" href="project_recipe.html"><span class="page-turn-dir">← Previous</span><span class="page-turn-label">Project Instructions</span></a>
+<a class="page-turn-link page-turn-link--next" href="blog.html"><span class="page-turn-dir">Next →</span><span class="page-turn-label">What I'm Thinking About</span></a>
+</nav>
+</div>
+</section>
+
+</main>
+
+<!-- ============================================================ -->
+<!-- Footer -->
+<!-- ============================================================ -->
+<div id="site-footer"></div>
+
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test Your Knowledge — Pat Leomi | Communication Coach - For Careers, AI & Beyond</title>
+<meta name="description" content="Pat Leomi offers two quick, low-risk ways to check your career strategy and whether you can spot the limits of an AI prompt.">
+<meta name="robots" content="noai, noimageai">
+<link rel="canonical" href="https://leomi.boston/test.html">
+<link rel="icon" href="assets/images/site-icon-green.png">
+<link rel="apple-touch-icon" href="assets/images/site-icon-green.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#44613B">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Test Your Knowledge — Pat Leomi | Communication Coach - For Careers, AI & Beyond">
+<meta property="og:description" content="Pat Leomi offers two quick, low-risk ways to check your career strategy and whether you can spot the limits of an AI prompt.">
+<meta property="og:url" content="https://leomi.boston/test.html">
+<meta property="og:image" content="https://leomi.boston/assets/images/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Pat Leomi">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="assets/fonts/Outfit/Outfit-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="assets/css/main.css">
+<script src="assets/js/components.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/test.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Test Your Knowledge — Pat Leomi",
+  "url": "https://leomi.boston/test.html",
+  "about": {
+    "@type": "Person",
+    "name": "Pat Leomi",
+    "jobTitle": "Communication Coach",
+    "url": "https://leomi.boston/"
+  }
+}
+</script>
+</head>
+<body data-page="test">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============================================================ -->
+<!-- Navigation -->
+<!-- ============================================================ -->
+<div id="site-nav"></div>
+<div id="site-breadcrumbs"></div>
+
+<main id="main">
+
+<!-- ============================================================ -->
+<!-- HERO -->
+<!-- ============================================================ -->
+<section class="hero" id="quiz-hero">
+<div class="container narrow">
+<p class="eyebrow">Start Here</p>
+<h1>Test Your <span class="accent-italic">Knowledge</span></h1>
+<p class="lede">
+Use the simple tests below to do a quick gut check on your career strategy and ability to think clearly about prompt writing. This is just one of many ways to think about either. Connect with me for a free 15-minute consult afterward to talk about it.</p>
+</div>
+</section>
+
+<!-- ============================================================ -->
+<!-- DOORS -->
+<!-- ============================================================ -->
+<section class="section section--flush" id="doors">
+<div class="container narrow">
+
+<div class="door-grid">
+
+<button class="door door--green" type="button" data-door="stress">
+<span class="eyebrow">Career Strategy Reflection</span>
+<h3>Reflect on your career strategy</h3>
+<p>Seven short phrases to think about. How confidently could you respond?</p>
+<span class="door-go">Reflect</span>
+</button>
+
+<button class="door door--blue" type="button" data-door="dissect">
+<span class="eyebrow eyebrow--blue">Dissect an AI Prompt</span>
+<h3>Dissect a career-focused AI prompt</h3>
+<p>See if you can spot the limitations of a career-focused prompt without seeing the result.</p>
+<span class="door-go">Examine</span>
+</button>
+
+</div>
+
+<p style="margin-top: 2rem; text-align: center;">
+<a href="connect.html">I'd rather just set up a free 15-minute consult →</a>
+</p>
+
+</div>
+</section>
+
+<!-- ============================================================ -->
+<!-- EXPERIENCE 1: CAREER STRATEGY REFLECTION-->
+<!-- ============================================================ -->
+<section class="section section--flush" id="xp-stress" hidden>
+<div class="container narrow">
+
+<button class="back-link back-link--green" type="button" data-door-back>Pick a different test</button>
+
+<h2>Could you answer these <span class="accent-italic">out loud?</span></h2>
+<p class="lede lede--narrow">Seven questions. Answer quickly. Be honest. (I won't be able to see your answers unless you choose to share them.)</p>
+
+<!-- The quiz. Question copy lives in assets/js/test.js -->
+<div id="quiz-shell" class="card" style="margin-top: 2.5rem;" aria-live="polite">
+<div class="quiz-progress">
+<span class="quiz-count">Question 1 of 7</span>
+<span class="quiz-track"><span class="quiz-fill"></span></span>
+</div>
+<p class="quiz-area"></p>
+<p class="quiz-question"></p>
+<div class="quiz-options">
+<button class="quiz-option" type="button" data-rating="Confident">I can explain this confidently</button>
+<button class="quiz-option" type="button" data-rating="Unclear">I'd give a vague or unclear response</button>
+<button class="quiz-option" type="button" data-rating="No clue">I honestly don't know</button>
+</div>
+<button class="quiz-back quiz-back--placeholder" type="button" id="quiz-back" aria-hidden="true" tabindex="-1">Back to previous question</button>
+</div>
+
+<!-- Shown while taking the quiz, for anyone who'd rather skip it. -->
+<p class="xp-note" id="stress-fallback" style="margin-top: 1.25rem;">Prefer to skip the test? Email <b><a href="mailto:pat@leomi.boston">pat@leomi.boston</a></b> to set up a free 15-minute consult.</p>
+
+<!-- Results -->
+<div id="quiz-results" hidden style="margin-top: 2.5rem;">
+<h3>Your strategy map</h3>
+<div class="map-grid"></div>
+<p class="lede lede--narrow" id="quiz-summary"></p>
+<div class="xp-actions">
+<a class="btn" id="quiz-mailto" href="mailto:pat@leomi.boston">Bring this map to a free 15-minute consult</a>
+<button class="btn btn--quiet" type="button" id="quiz-copy">Copy email instead</button>
+<button class="btn btn--quiet" type="button" id="quiz-retake">Retake the quiz</button>
+</div>
+<p class="xp-note" style="margin-top: 1.25rem;">The map button opens a draft in your email app with a pre-filled email. Edit or personalize before sending.</p>
+<p class="xp-note">Mail app won't open? Hit "Copy email instead" and paste it in an email to <b><a href="mailto:pat@leomi.boston">pat@leomi.boston</a></b>.</p>
+</div>
+
+</div>
+</section>
+
+<!-- ============================================================ -->
+<!-- EXPERIENCE 2: DISSECT AN AI PROMPT -->
+<!-- ============================================================ -->
+<section class="section section--flush" id="xp-dissect" hidden>
+<div class="container narrow">
+
+<button class="back-link back-link--blue" type="button" data-door-back>Pick a different test</button>
+
+<h2>Can you predict <span class="accent-italic">the outcome?</span></h2>
+<p class="lede lede--narrow">
+A job seeker is applying for a senior program manager role. They use this prompt to revise their resume. Even without seeing the result, see if you can anticipate what might go wrong.</p>
+
+<!-- Phase 1: The Prompt -->
+<div class="chat-mock">
+<div class="chat-bubble chat-bubble--user">
+<span class="chat-role">The prompt</span>
+<p>Based on the attached job description and resume, optimize my resume to pass an ATS by adding exact keywords from the job posting. Use simple bullet points and standard section names.</p>
+</div>
+</div>
+
+<!-- Phase 2: The Prediction -->
+<h3 style="margin-top: 3rem;">How could this prompt work against you?</h3>
+<p class="text-muted">You don't need to see the result to predict where it will fall short. Select every limitation that applies to how this prompt is written:</p>
+
+<div class="issue-grid" id="issue-grid">
+<button class="issue-card" type="button" aria-pressed="false" data-real="true">It might lead to keyword stuffing<span class="issue-verdict"></span><span class="issue-explain">Instructions like "adding exact keywords" risks the AI fabricating information and inserting it where it doesn't belong</span></button>
+
+<button class="issue-card" type="button" aria-pressed="false" data-real="false">It might be too short of a prompt<span class="issue-verdict"></span><span class="issue-explain">An effective prompt gives the AI the information it needs and delivers the result you want, regardless of how long it is</span></button>
+
+<button class="issue-card" type="button" aria-pressed="false" data-real="false">It doesn't explicitly say to avoid hallucinating<span class="issue-verdict"></span><span class="issue-explain">Saying "don't hallucinate" doesn't prevent hallucinations, but there are some strategies to help the AI focus on where it gets information</span></button>
+
+<button class="issue-card" type="button" aria-pressed="false" data-real="true">It might be optimizing to someone else's standard<span class="issue-verdict"></span><span class="issue-explain">Without additional explanation, the AI often defaults to average expectations rather than professional standards</span></button>
+
+<button class="issue-card" type="button" aria-pressed="false" data-real="true">It might have a different understanding of what "simple" means<span class="issue-verdict"></span><span class="issue-explain">You and the AI might disagree about what words mean, so defining key terms can be helpful to enhancing relevance of results</span></button>
+
+<button class="issue-card" type="button" aria-pressed="false" data-real="true">It gives no signal about what to keep or cut<span class="issue-verdict"></span><span class="issue-explain">Ambiguous prompts hand decision making entirely to the AI without clear instructions to guide it</span></button>
+
+<button class="issue-card" type="button" aria-pressed="false" data-real="false">It doesn't assign a specific persona like "expert recruiter"<span class="issue-verdict"></span><span class="issue-explain">Saying to "act like an expert" on any topic can lead to unwanted biases and stereotypes, especially if you come from an underrepresented background</span></button>
+
+<button class="issue-card" type="button" aria-pressed="false" data-real="neutral">It might not be an advanced enough model<span class="issue-verdict"></span><span class="issue-explain">Clear instructions enable less advanced models to produce exceptional results, which can offset the impact of a specific model choice (but the complexity and scale of the request matters)</span></button>
+</div>
+
+<button class="reveal-btn" type="button" id="dissect-reveal">Check my read</button>
+<p class="lede lede--narrow" id="dissect-score" hidden aria-live="polite"></p>
+
+<!-- Shown before the reveal, for anyone who'd rather skip the test. -->
+<p class="xp-note" id="dissect-fallback" style="margin-top: 1.25rem;">Prefer to skip the test? Email <b><a href="mailto:pat@leomi.boston">pat@leomi.boston</a></b> to set up a free 15-minute consult.</p>
+
+<!-- CTA-->
+<div id="dissect-cta" hidden>
+<div class="xp-actions">
+<a class="btn" id="dissect-mailto" href="mailto:pat@leomi.boston">Bring this to a free 15-minute consult</a>
+<button class="btn btn--quiet" type="button" id="dissect-copy">Copy email instead</button>
+</div>
+<p class="xp-note" style="margin-top: 1.25rem;">Consult button opens a draft in your own mail app. Edit or personalize it before sending. Nothing is shared until you hit send.</p>
+<p class="xp-note">Mail app won't open? Hit "Copy email instead" and paste it into an email to <a href="mailto:pat@leomi.boston">pat@leomi.boston</a>.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- ============================================================ -->
+<!-- PAGE TURN -->
+<!-- ============================================================ -->
+<section class="section section--flush">
+<div class="container narrow">
+<nav class="page-turn" aria-label="Keep reading">
+<a class="page-turn-link" href="index.html"><span class="page-turn-dir">← Previous</span><span class="page-turn-label">Home</span></a>
+<a class="page-turn-link page-turn-link--next" href="about.html"><span class="page-turn-dir">Next →</span><span class="page-turn-label">Who I Am</span></a>
+</nav>
+</div>
+</section>
+
+</main>
+
+<!-- ============================================================ -->
+<!-- Footer -->
+<!-- ============================================================ -->
+<div id="site-footer"></div>
+
+</body>
+</html>
