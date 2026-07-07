@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- GitHub Pages serves this file for missing URLs at any depth (e.g.
+     /a/b/c), so relative asset paths would resolve against the bad URL's
+     folder and 404, leaving the page unstyled. Anchor them to the site root
+     with <base href="/"> — but ONLY when served over http(s). Opened directly
+     from disk (file://), "/" would mean the drive root, so there we skip the
+     base and let the relative paths resolve next to this file. -->
+<script>if (location.protocol !== 'file:') { document.write('<base href="/">'); }</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Page Not Found — Pat Leomi | Communication Coach - For Careers, AI & Beyond</title>
@@ -51,6 +58,15 @@
 <!-- Footer -->
 <!-- ============================================================ -->
 <div id="site-footer"></div>
+
+<!-- With <base href="/"> the fragment-only skip link would resolve to the
+     home page; repoint it to the current path so it stays on the 404. -->
+<script>
+  (function () {
+    var s = document.querySelector('.skip-link');
+    if (s) { s.setAttribute('href', location.pathname + '#main'); }
+  })();
+</script>
 
 </body>
 </html>
