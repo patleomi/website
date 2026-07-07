@@ -307,13 +307,13 @@ p { margin: 0 0 1.1rem; }
     gap: 0.6rem;
     font-family: var(--font-head);
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 2rem;
     letter-spacing: 0.01em;
     color: var(--ink);
     text-transform: uppercase;
 }
 .brand:hover { text-decoration: none; }
-.brand img { width: 1.7rem; height: 1.7rem; }
+.brand img { width: 2rem; height: 2rem; }
 .brand em { font-style: italic; color: var(--green); }
 
 .site-nav ul {
